@@ -18,6 +18,7 @@ $confirm_password = "";
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BX4T1LQCFG"></script>
 
 <script>
+ window.username = prompt("Nickname?");
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -46,7 +47,7 @@ var xhttp = new XMLHttpRequest();
       function sendB(){
 var xhttp = new XMLHttpRequest();
 m = document.getElementById("m").value;
-u = "test";
+u = window.username
 col = "black";
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
