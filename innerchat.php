@@ -7,7 +7,8 @@ foreach($marr as $value){
   $c = $value["content"];
   $t = $value["type"];
   if($t === "regular"){
-  echo "<b><u>" . $u . ":</u></b> " . $c . "<br />";
+    
+  echo "<b><u>" . $u . ":</u></b> " . htmlspecialchars($c) . "<br />";
   } else if($t === "raw"){
     echo $c . "<br />";
   }
